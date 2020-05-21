@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<script>
+	
+	function Conta(){
+		var nomeCorr;
+		var banco;
+		var numeroDaConta;
+		var saldo;
+		this.getNomeCorr = function(){
+			return nomeCorr;
+		};
+		this.getBanco = function(){
+			return banco;
+		};
+		this.getNumeroDaConta = function(){
+			return numeroDaConta;
+		};
+		this.getSaldo = function(){
+			return saldo;
+		};
+		this.setNomeCorr = function(value){
+			nomeCorr = value;
+		}
+		this.setBanco = function(value){
+			banco = value;
+		}
+		this.setNumeroDaConta = function(value){
+			numeroDaConta = value;
+		}
+		this.setSaldo = function(value){
+			saldo = value;
+		}
+	};
+	
+	function Corrente(){
+		var saldoEspecial;
+		this.getSaldoEspecial = function(){
+			return saldoEspecial;
+		};
+		this.setSaldoEspecial = function(value){
+			saldoEspecial = value;
+		}
+	}
+
+	function Poupança(){
+		var juros;
+		var dataVencimento;
+		this.getJuros = function(){
+			return juros;
+		};
+		this.getDataVencimento = function(){
+			return dataVencimento;
+		};
+		this.setJuros = function(value){
+			juros = value;
+		}
+		this.setDataVencimento = function(value){
+			dataVencimento = value;
+		}
+	}
+	
+	Corrente.prototype = new Conta();
+	Poupança.prototype = new Conta();
+
+	var conta1 = new Conta();
+	conta1.setNomeCorr("Caio");
+	conta1.setBanco("NuBank");
+	conta1.setNumeroDaConta("0202020");
+	conta1.setSaldo(1000000);
+	alert("Conta 1 : nome - "+ conta1.getNomeCorr() + 
+		"; banco - "+ conta1.getBanco() + 
+		"; numero da Conta- "+ conta1.getNumeroDaConta() + 
+		"; Saldo - "+ conta1.getSaldo() );	
+
+	
+	var conta2 = new Corrente();
+	conta2.setNomeCorr("Caio");
+	conta2.setBanco("NuBank");
+	conta2.setNumeroDaConta("0202020");
+	conta2.setSaldo(1000000);
+	conta2.setSaldoEspecial(2000000);
+	alert("Conta 2 Corrente : nome - "+ conta2.getNomeCorr() + 
+		"; banco - "+ conta2.getBanco() + 
+		"; numero da Conta- "+ conta2.getNumeroDaConta() + 
+		"; Saldo - "+ conta2.getSaldo() +
+		"; SaldoEspecial - "+ conta2.getSaldoEspecial() );
+
+	var conta3 = new Poupança();
+	conta3.setNomeCorr("Caio");
+	conta3.setBanco("NuBank");
+	conta3.setNumeroDaConta("0202020");
+	conta3.setSaldo(1000000);
+	conta3.setJuros("1%");
+	conta3.setDataVencimento("21/05/2030");
+	alert("Conta 3 Poupança : nome - "+ conta3.getNomeCorr() + 
+		"; banco - "+ conta3.getBanco() + 
+		"; numero da Conta- "+ conta3.getNumeroDaConta() + 
+		"; Saldo - "+ conta3.getSaldo() +
+		"; Juros - "+ conta3.getJuros() +
+		"; Data de Vencimento - "+ conta3.getDataVencimento() );
+		
+	
+</script>
+</head>
+
+<body>
+
+
+
+</body>
+
+
+</html>
