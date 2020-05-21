@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<script>
+
+	function Retangulo(base, altura){
+		this.base = base;
+		this.altura = altura;
+		this.calcArea = function(){
+			this.area = base * altura;
+		};
+	}
+	
+	var ret1 = new Retangulo(4, 2);
+	ret1.calcArea();
+	alert(ret1.area);//8
+	
+</script>
+</head>
+
+<body>
+
+
+
+</body>
+
+
+</html>
