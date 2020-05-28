@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 9</title>
+    <script>
+
+        function toUpper() {
+        	document.forms.formulario1.elements.idTexto.value = document.forms.formulario1.elements.idTexto.value.toUpperCase();
+		if (document.getElementById("Minuscula").checked == true){
+			document.getElementById("Minuscula").checked = false;
+		}
+            	return true;
+        }
+	function toLower() {
+        	document.forms.formulario1.elements.idTexto.value = document.forms.formulario1.elements.idTexto.value.toLowerCase();
+		if (document.getElementById("Maiuscula").checked == true){
+			document.getElementById("Maiuscula").checked = false;
+		}
+            	return true;
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <form action="teste" method="POST" name="formulario1" id="formulario1" >
+
+        <div id="principal" width=200 heigth=200 align=center>
+            Digite um texto curto:
+            <input name="idTexto" type="text" id="idTexto" size="52" maxlength="150">
+	    <input type="checkbox" id="Maiuscula" onclick="toUpper()" value="Maiuscula">
+            <input type="checkbox" id="Minuscula" onclick="toLower()" value="Minuscula">
+        </div>
+
+	
+    </form>
+</body>
+
+</html>
