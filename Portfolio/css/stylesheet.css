@@ -1,0 +1,118 @@
+.header {
+	display: flex;
+	font-family: Calibri, sans-seriff;
+	font-size: 72px;
+	background-color: #66CDAA;
+	height: 120px;
+	width: 500px;
+	margin: 0 auto;	
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.headerItem{
+	display: inline-block;
+	font-size: 72px;
+	height: 120px;
+	width: 120px;
+	margin: 0 auto;
+	padding-top: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+	padding-right: 0;
+	line-height: 120px;
+}
+
+.headerImg{
+	display: inline-block;
+	background-image: url("perfil.jpg");
+	background-size: cover;
+	height:120px;
+	width: 120px;	
+	border-radius: 50%;
+	margin: 0 auto;
+	
+}
+
+img.imgDetalhes{
+	float: right;
+	height:50px;
+	padding: 0px;
+	margin: 20px;
+}
+
+.divisoria { 
+	font-family: Calibri, sans-seriff;
+	font-size: 36px;
+	background-color: #FFB6C1;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+.esc{
+	text-allign: center;
+	background-color: #F08080;
+	margin: 0px;
+	padding-left: 20px;
+	cursor: pointer;
+	font-size:48px;
+	-webkit-touch-callout: none; /* iOS Safari */
+    	-webkit-user-select: none; /* Safari */
+     	-khtml-user-select: none; /* Konqueror HTML */
+       	-moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
+}
+
+.trab{
+	text-allign: center;
+	background-color: #F08080;
+	margin: 0px;
+	padding-left: 20px;
+	cursor: pointer;
+	font-size:48px;
+	-webkit-touch-callout: none; /* iOS Safari */
+    	-webkit-user-select: none; /* Safari */
+     	-khtml-user-select: none; /* Konqueror HTML */
+       	-moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none;
+}
+
+.item{
+	margin: 0px;
+	padding-left: 20px;
+	font-size: 28px;
+	line-height: 90px;
+
+}
+
+
+
+.detalhe{
+	margin:0px;
+	font-style: italic;
+	font-size: 16px;
+	padding-left:40px;	
+}
+
+#EscolaridadeContainer{
+	margin: 0px;
+	padding-bottom: 20px;	
+	display:none;	
+}
+#TrabalhosContainer{
+	margin: 0px;
+	padding-bottom: 20px;	
+	display:none;	
+}
+
+body{
+	background-color: #66CDAA;
+	background-attachment:fixed;
+	background-size: cover;
+}
+
